@@ -50,8 +50,9 @@ mybatis:
   type-aliases-package: com.weibo.weibo.entity
 
 # grpc端口号
-grpc:
+grpc: 
   port: 8770
 
-server:
-  port: 8288
+# 我认为没有用
+# server:
+#  port: 8288
