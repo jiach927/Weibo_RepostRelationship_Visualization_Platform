@@ -89,7 +89,7 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
+        <!--springboot的单元测试-->>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -97,6 +97,7 @@
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
+					<!--支持在JUnit5上运行JUnit4-->
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>

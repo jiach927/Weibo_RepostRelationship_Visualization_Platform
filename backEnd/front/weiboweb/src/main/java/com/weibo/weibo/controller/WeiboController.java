@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
  * web层：用于接收ajax请求
  */
 @Slf4j
-@CrossOrigin("*")
+@CrossOrigin("*") // 跨域
 @RestController
 public class WeiboController {
     //从容器中获取调用GRpc stub

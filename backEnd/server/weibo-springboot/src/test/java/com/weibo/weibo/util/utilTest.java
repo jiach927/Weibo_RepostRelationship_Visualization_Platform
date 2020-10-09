@@ -16,8 +16,10 @@ public class utilTest {
     private QueryMapper queryMapper;
     @Resource
     private RepoRelationshipMapper repoRelationshipMapper;
+    
+    // 查询某一条微博的转发关系和微博正文的返回json字符串
     @Test
-    public void toJson(){
+    public void toJson(){ 
         String bw_id="4529050938509504";
         List<Query> query=queryMapper.selectQueryByBw_id(bw_id);
         String center_bw_id="4523566437432908";

@@ -10,11 +10,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 import java.util.List;
+// 版本一
 
-@Slf4j
+@Slf4j // lombok自带,需要导入lombok插件,日志记录,log直接使用
 @SpringBootTest(classes=WeiboSpringboot192Application.class)
 public class MapperTest{
-    @Resource
+    @Resource //通过bean名字自动注入
     private QueryMapper queryMapper;
     @Resource
     private RepoRelationshipMapper repoRelationshipMapper;
@@ -34,7 +35,7 @@ public class MapperTest{
         log.debug("【queryList】={}",queryList);
     }
 
-    @Test
+    @Test 
     public void selectRepoRelationshipByCenter_bw_id(){
         String center_bw_id="4523566437432908";
         List<RepoRelationship> repoRelationships=repoRelationshipMapper.selectRepoRelationshipByCenter_bw_id(center_bw_id);
